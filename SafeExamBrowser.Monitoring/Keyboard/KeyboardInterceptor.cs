@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (c) 2025 ETH Zürich, IT Services
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -47,7 +47,7 @@ namespace SafeExamBrowser.Monitoring.Keyboard
 		private bool KeyboardHookCallback(int keyCode, KeyModifier modifier, KeyState state)
 		{
 			var block = false;
-			//var key = KeyInterop.KeyFromVirtualKey(keyCode);
+			var key = KeyInterop.KeyFromVirtualKey(keyCode);
 
 			//block |= key == Key.Apps;
 			//block |= key == Key.Escape && modifier == KeyModifier.None && !settings.AllowEsc;
