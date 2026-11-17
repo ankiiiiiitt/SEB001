@@ -1,0 +1,35 @@
+name: Build SEB Patch EXE
+
+on:
+  push:
+    branches: [ "**" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build patch-seb.exe
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v2
+
+      - name: Restore NuGet packages
+        run: nuget restore SafeExamBrowser.sln
+
+      - name: Run Build Script
+        shell: pwsh
+        run: .\build.ps1 -Configuration Release
+
+      - name: Upload Safe Exam Browser Patch EXE
+        uses: actions/upload-artifact@v4
+        with:
+          name: SafeExamBrowser-Patch
+          path: patch-seb/bin/Release/patch-seb.exe
+          if-no-files-found: error
