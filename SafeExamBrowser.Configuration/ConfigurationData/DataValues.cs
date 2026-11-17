@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (c) 2025 ETH Zürich, IT Services
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -170,7 +170,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData
 			settings.Browser.AllowCustomDownAndUploadLocation = true;
 			settings.Browser.AllowDownloads = true;
 			settings.Browser.AllowFind = false;
-			settings.Browser.AllowPageZoom = false;
+			settings.Browser.AllowPageZoom = true;
 			settings.Browser.AllowPdfReader = true;
 			settings.Browser.AllowPdfReaderToolbar = false;
 			settings.Browser.AllowPrint = true;

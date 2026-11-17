@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (c) 2025 ETH Zürich, IT Services
  * 
  * This Source Code Form is subject to the terms of the Mozilla Public
@@ -274,7 +274,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 			//{
 			//	settings.Browser.AllowPageZoom = allow;
 			//}
-			settings.Browser.AllowPageZoom = false;
+			settings.Browser.AllowPageZoom = true;
 			}
 
 		private void MapAllowPdfReaderToolbar(AppSettings settings, object value)
