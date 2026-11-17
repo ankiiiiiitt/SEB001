@@ -81,6 +81,12 @@ namespace SafeExamBrowser.Browser.Handlers
 
 		public bool OnPreKeyEvent(IWebBrowser browserControl, IBrowser browser, KeyType type, int keyCode, int nativeKeyCode, CefEventFlags modifiers, bool isSystemKey, ref bool isKeyboardShortcut)
 		{
+			var ctrl = modifiers.HasFlag(CefEventFlags.ControlDown);
+			if (ctrl && (keyCode == (int) Keys.C || keyCode == (int) Keys.V || keyCode == (int) Keys.X))
+			{
+				return true;
+			}
+
 			if (type == KeyType.KeyUp && keyCode == (int) Keys.F5)
 			{
 				ReloadRequested?.Invoke();

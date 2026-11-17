@@ -181,7 +181,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 			//{
 			//	settings.Security.ClipboardPolicy = policy == ALLOW ? ClipboardPolicy.Allow : (policy == BLOCK ? ClipboardPolicy.Block : ClipboardPolicy.Isolated);
 			//}
-			settings.Security.ClipboardPolicy = ClipboardPolicy.Allow;
+			settings.Security.ClipboardPolicy = ClipboardPolicy.Block;
 			}
 
 		private void MapDisableSessionChangeLockScreen(AppSettings settings, object value)

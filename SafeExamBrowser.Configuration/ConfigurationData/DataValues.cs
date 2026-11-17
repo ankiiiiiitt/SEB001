@@ -213,10 +213,10 @@ namespace SafeExamBrowser.Configuration.ConfigurationData
 			settings.Keyboard.AllowAltEsc = true;
 			settings.Keyboard.AllowAltF4 = true;
 			settings.Keyboard.AllowAltTab = true;
-			settings.Keyboard.AllowCtrlC = true;
+			settings.Keyboard.AllowCtrlC = false;
 			settings.Keyboard.AllowCtrlEsc = true;
-			settings.Keyboard.AllowCtrlV = true;
-			settings.Keyboard.AllowCtrlX = true;
+			settings.Keyboard.AllowCtrlV = false;
+			settings.Keyboard.AllowCtrlX = false;
 			settings.Keyboard.AllowEsc = true;
 			settings.Keyboard.AllowF1 = true;
 			settings.Keyboard.AllowF2 = true;
@@ -261,7 +261,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData
 			settings.Security.AllowStickyKeys = true;
 			settings.Security.AllowTermination = true;
 			settings.Security.AllowWindowCapture = true;
-			settings.Security.ClipboardPolicy = ClipboardPolicy.Allow;
+			settings.Security.ClipboardPolicy = ClipboardPolicy.Block;
 			settings.Security.DisableSessionChangeLockScreen = false;
 			settings.Security.KioskMode = KioskMode.DisableExplorerShell;
 			settings.Security.VerifyCursorConfiguration = false;
