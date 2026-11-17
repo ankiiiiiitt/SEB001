@@ -515,8 +515,8 @@ if (typeof __SEB_focusElement === 'undefined') {
 		{
 			BackwardButton.IsEnabled = WindowSettings.AllowBackwardNavigation;
 			BackwardButton.Visibility = WindowSettings.AllowBackwardNavigation ? Visibility.Visible : Visibility.Collapsed;
-			DeveloperConsoleMenuItem.Visibility = WindowSettings.AllowDeveloperConsole ? Visibility.Visible : Visibility.Collapsed;
-			FindMenuItem.Visibility = settings.AllowFind ? Visibility.Visible : Visibility.Collapsed;
+			DeveloperConsoleMenuItem.Visibility = Visibility.Collapsed;
+			FindMenuItem.Visibility = Visibility.Collapsed;
 			ForwardButton.IsEnabled = WindowSettings.AllowForwardNavigation;
 			ForwardButton.Visibility = WindowSettings.AllowForwardNavigation ? Visibility.Visible : Visibility.Collapsed;
 			HomeButton.IsEnabled = WindowSettings.ShowHomeButton;
@@ -525,7 +525,7 @@ if (typeof __SEB_focusElement === 'undefined') {
 			ReloadButton.Visibility = WindowSettings.ShowReloadButton ? Visibility.Visible : Visibility.Collapsed;
 			Toolbar.Visibility = WindowSettings.ShowToolbar ? Visibility.Visible : Visibility.Collapsed;
 			UrlTextBox.Visibility = WindowSettings.AllowAddressBar ? Visibility.Visible : Visibility.Hidden;
-			ZoomMenuItem.Visibility = settings.AllowPageZoom ? Visibility.Visible : Visibility.Collapsed;
+			ZoomMenuItem.Visibility = Visibility.Collapsed;
 		}
 
 		private void InitializeBounds()
