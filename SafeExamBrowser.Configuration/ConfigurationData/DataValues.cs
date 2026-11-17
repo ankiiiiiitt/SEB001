@@ -155,7 +155,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData
 
 			settings.Browser.AdditionalWindow.AllowAddressBar = false;
 			settings.Browser.AdditionalWindow.AllowBackwardNavigation = false;
-			settings.Browser.AdditionalWindow.AllowDeveloperConsole = true;
+			settings.Browser.AdditionalWindow.AllowDeveloperConsole = false;
 			settings.Browser.AdditionalWindow.AllowForwardNavigation = false;
 			settings.Browser.AdditionalWindow.AllowReloading = true;
 			settings.Browser.AdditionalWindow.FullScreenMode = false;
@@ -169,8 +169,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData
 			settings.Browser.AllowConfigurationDownloads = true;
 			settings.Browser.AllowCustomDownAndUploadLocation = true;
 			settings.Browser.AllowDownloads = true;
-			settings.Browser.AllowFind = true;
-			settings.Browser.AllowPageZoom = true;
+			settings.Browser.AllowFind = false;
+			settings.Browser.AllowPageZoom = false;
 			settings.Browser.AllowPdfReader = true;
 			settings.Browser.AllowPdfReaderToolbar = false;
 			settings.Browser.AllowPrint = true;
@@ -181,7 +181,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData
 			settings.Browser.EnableBrowser = true;
 			settings.Browser.MainWindow.AllowAddressBar = false;
 			settings.Browser.MainWindow.AllowBackwardNavigation = false;
-			settings.Browser.MainWindow.AllowDeveloperConsole = true;
+			settings.Browser.MainWindow.AllowDeveloperConsole = false;
 			settings.Browser.MainWindow.AllowForwardNavigation = false;
 			settings.Browser.MainWindow.AllowReloading = true;
 			settings.Browser.MainWindow.FullScreenMode = false;

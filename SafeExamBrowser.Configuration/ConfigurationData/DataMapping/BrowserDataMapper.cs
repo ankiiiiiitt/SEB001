@@ -228,8 +228,8 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 			//	settings.Browser.MainWindow.AllowDeveloperConsole = allow;
 			//	settings.Browser.AdditionalWindow.AllowDeveloperConsole = allow;
 			//}
-			settings.Browser.MainWindow.AllowDeveloperConsole = true;
-			settings.Browser.AdditionalWindow.AllowDeveloperConsole = true;
+			settings.Browser.MainWindow.AllowDeveloperConsole = false;
+			settings.Browser.AdditionalWindow.AllowDeveloperConsole = false;
 			}
 
 		private void MapAllowDownloads(AppSettings settings, object value)
@@ -247,7 +247,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 			//{
 			//	settings.Browser.AllowFind = allow;
 			//}
-			settings.Browser.AllowFind = true;
+			settings.Browser.AllowFind = false;
 			}
 
 		private void MapAllowNavigation(AppSettings settings, object value)
@@ -274,7 +274,7 @@ namespace SafeExamBrowser.Configuration.ConfigurationData.DataMapping
 			//{
 			//	settings.Browser.AllowPageZoom = allow;
 			//}
-			settings.Browser.AllowPageZoom = true;
+			settings.Browser.AllowPageZoom = false;
 			}
 
 		private void MapAllowPdfReaderToolbar(AppSettings settings, object value)
