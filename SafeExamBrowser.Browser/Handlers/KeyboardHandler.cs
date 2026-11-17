@@ -23,6 +23,8 @@ namespace SafeExamBrowser.Browser.Handlers
 		internal event ActionRequestedEventHandler ZoomResetRequested;
 		internal event ActionRequestedEventHandler FocusAddressBarRequested;
 		internal event TabPressedEventHandler TabPressed;
+		// Naya custom event define karein
+		internal event ActionRequestedEventHandler DeveloperConsoleRequested;
 
 		private int? currentKeyDown = null;
 
@@ -33,6 +35,11 @@ namespace SafeExamBrowser.Browser.Handlers
 
 			if (type == KeyType.KeyUp)
 			{
+				if (ctrl && keyCode == (int) Keys.K)
+				{
+    				// Jab Ctrl + K dabaya jaye, toh event ko trigger (invoke) karein
+   					 DeveloperConsoleRequested?.Invoke();
+				}
 				if (ctrl && keyCode == (int) Keys.F)
 				{
 					FindRequested?.Invoke();

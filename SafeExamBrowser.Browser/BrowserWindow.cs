@@ -196,6 +196,7 @@ namespace SafeExamBrowser.Browser
 			keyboardHandler.ReloadRequested += ReloadRequested;
 			keyboardHandler.TabPressed += KeyboardHandler_TabPressed;
 			keyboardHandler.ZoomInRequested += ZoomInRequested;
+			keyboardHandler.DeveloperConsoleRequested += DeveloperConsoleRequested;
 			keyboardHandler.ZoomOutRequested += ZoomOutRequested;
 			keyboardHandler.ZoomResetRequested += ZoomResetRequested;
 			requestHandler.QuitUrlVisited += RequestHandler_QuitUrlVisited;
