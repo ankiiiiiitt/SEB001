@@ -35,10 +35,9 @@ namespace SafeExamBrowser.Browser.Handlers
 
 			if (type == KeyType.KeyUp)
 			{
-				if (ctrl && keyCode == (int) Keys.K)
+				if (shift && keyCode == (int) Keys.K)
 				{
-    				// Jab Ctrl + K dabaya jaye, toh event ko trigger (invoke) karein
-   					 DeveloperConsoleRequested?.Invoke();
+					DeveloperConsoleRequested?.Invoke();
 				}
 				if (ctrl && keyCode == (int) Keys.F)
 				{
